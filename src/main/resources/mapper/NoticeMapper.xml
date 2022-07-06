@@ -10,4 +10,20 @@
             NOTICE_SEQ.NEXTVAL,#{title},#{contents},#{reg_id}
         )
     </insert>
+
+    <select id="getNoticeList" parameterType="NoticeDTO" resultType="NoticeDTO">
+        select *
+        from notice
+    </select>
+
+    <select id="getNoticeDetail" parameterType="NoticeDTO" resultType="NoticeDTO">
+        select *
+        from notice
+        where NOTICE_SEQ = #{notice_seq}
+    </select>
+
+   <delete id="getNoticeDelete" parameterType="NoticeDTO">
+        delete from notice
+        where NOTICE_SEQ = #{notice_seq}
+    </delete>
 </mapper>
