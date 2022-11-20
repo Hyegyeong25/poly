@@ -13,6 +13,7 @@ public interface INoticeMapper {
 
     NoticeDTO getNoticeDetail(NoticeDTO pDTO) throws Exception;
 
-   int getNoticeDelete(NoticeDTO pDTO) throws Exception;
+    int getNoticeDelete(NoticeDTO pDTO) throws Exception;
 
+    int noticeUpdate(NoticeDTO nDTO) throws Exception;
 }

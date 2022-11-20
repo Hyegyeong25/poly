@@ -12,8 +12,8 @@
         alert("<%=msg%>")
         location.href="<%=url%>"
     </script>
-    <<meta charset="utf-8"/>
-    <title>웹페이지 제목z</title>>
+    <meta charset="utf-8"/>
+    <title>웹페이지 제목z</title>
 </head>
 <body>
 

@@ -53,5 +53,11 @@ public class NoticeService implements INoticeService {
         return res;
     }
 
+    @Override
+    public int noticeUpdate(NoticeDTO nDTO) throws Exception {
+        int res = noticeMapper.noticeUpdate(nDTO);
+        return res;
+    }
+
 
 }
